@@ -243,14 +243,16 @@ function the_bootstrap_register_scripts_styles() {
 		 */
 		wp_register_style(
 			'tw-bootstrap',
-			get_template_directory_uri() . "/css/bootstrap{$suffix}.css",
+// desabilitando o min		get_template_directory_uri() . "/css/bootstrap{$suffix}.css",
+			get_template_directory_uri() . "/css/bootstrap.css", // estilo não minimizado
 			array(),
 			'2.0.3'
 		);
 		
 		wp_register_style(
 			'the-bootstrap',
-			get_template_directory_uri() . "/style{$suffix}.css",
+// desabilitando o min			get_template_directory_uri() . "/style{$suffix}.css",
+			get_template_directory_uri() . "/style.css", // estilo não minimizado
 			array('tw-bootstrap'),
 			$theme_version
 		);
