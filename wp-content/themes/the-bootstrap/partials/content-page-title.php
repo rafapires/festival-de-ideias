@@ -1,5 +1,5 @@
 <?php
-/** content-page.php
+/** content-page-title.php
  *
  * The template for displaying page content in the page.php template
  *
@@ -13,7 +13,11 @@ tha_entry_before(); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php tha_entry_top(); ?>
 	
-	<div id="fdi_without_title" class="entry-content clearfix">
+	<header class="page-header">
+		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content clearfix">
 		<?php
 		the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'the-bootstrap' ) );
 		the_bootstrap_link_pages(); ?>

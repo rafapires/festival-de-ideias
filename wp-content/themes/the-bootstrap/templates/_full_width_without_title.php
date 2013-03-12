@@ -1,9 +1,9 @@
 <?php
 /** _full_width.php
  *
- * Template Name: Full Width
+ * Template Name: Full Widthout With Title
  *
- * @author 	Konstantin Obenland
+ * @author 	Rafael D´Alessandro Pires
  * @package The Bootstrap
  * @since	1.3.0	- 29.04.2012
  */
@@ -16,7 +16,7 @@ get_header(); ?>
 		<?php tha_content_top();
 		
 		the_post();
-		get_template_part( '/partials/content', 'page-title' );
+		get_template_part( '/partials/content', 'page' );
 		comments_template( '', true );
 		
 		tha_content_bottom(); ?>
