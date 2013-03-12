@@ -493,5 +493,9 @@ table .label {
 #respond {
 	padding: 0 20px;
 }
+
+a:hover {
+	text-decoration: none;
+}
 /* End of file style.css */
 /* Location: ./wp-content/themes/the-bootstrap/style.css */
