@@ -38,14 +38,16 @@
 						'fallback_cb'		=>	false,
 						'walker'			=>	new The_Bootstrap_Nav_Walker,
 					) ); ?>
-					<hgroup>
-						<h1 id="site-title">
+					<div class='container'>
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+							<img id='fdi_logo' src='<?php echo get_bloginfo('template_url'); ?>/img/logotipo-2013.png' />
+						</a>
+						<hgroup class='pull-right'>
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-								<span><?php bloginfo( 'name' ); ?></span>
+								<h2 id="site-description" class='pull-right'><?php bloginfo( 'description' ); ?></h2>
 							</a>
-						</h1>
-						<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
-					</hgroup>
+						</hgroup>
+					</div>
 					
 					<?php if ( get_header_image() ) : ?>
 					<a id="header-image" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
