@@ -456,6 +456,15 @@ table .label {
 	}
 }
 
+/* =Formulário de inscrição de ideias
+-------------------------------------------------------------- */
+.frm_forms {
+    background-color: #EFEFEF;
+    padding: 10px 35px 10px 20px;
+}
 
+.fdi_full_width {
+    width: 715px;
+}
 /* End of file style.css */
 /* Location: ./wp-content/themes/the-bootstrap/style.css */
