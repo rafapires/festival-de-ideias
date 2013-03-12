@@ -466,5 +466,32 @@ table .label {
 .fdi_full_width {
     width: 715px;
 }
+
+/* =Logotipo Header
+-------------------------------------------------------------- */
+
+#fdi_logo {
+    margin-bottom: 20px;
+}
+
+/* =Customiza Layout
+-------------------------------------------------------------- */
+#page {
+    background-color: #EFEFEF;
+    margin-right: -20px;
+    padding: 14px 0 0;
+}
+
+#primary, .content {
+    background-color: #FFFFFF;
+}
+
+.hentry {
+    padding: 0 20px;
+}
+
+#respond {
+	padding: 0 20px;
+}
 /* End of file style.css */
 /* Location: ./wp-content/themes/the-bootstrap/style.css */
