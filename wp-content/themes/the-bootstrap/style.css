@@ -497,5 +497,39 @@ table .label {
 a:hover {
 	text-decoration: none;
 }
+
+/* =Layout lista ideias
+-------------------------------------------------------------- */
+/*
+#fdi_without_title {
+    margin-top: 20px;
+}
+*/
+#fdi_without_title #frm_search_form {
+    margin: 0;
+    padding: 0;
+}
+
+#fdi_resumo_thumb_ideia > div {
+    background-color: #FFFFFF;
+    min-height: 106px;
+    padding: 3px;
+}
+
+#fdi_thumbnail_ideia {
+    margin: 14px 9px;
+}
+
+#fdi_title_thumb_ideia {
+    background-color: #C3C3D8;
+    padding: 0 7px;
+}
+
+#fdi_icon_tema_ideia {
+    background: none repeat scroll 0 0 white;
+    padding: 5px;
+}
+
+
 /* End of file style.css */
 /* Location: ./wp-content/themes/the-bootstrap/style.css */
