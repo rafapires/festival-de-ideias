@@ -474,6 +474,14 @@ table .label {
     margin-bottom: 20px;
 }
 
+#site-description {
+	font-size: 1.4em;
+	line-height: 116%;
+	max-height: 118px;
+	text-align: justify;
+	overflow: hidden;
+}
+
 /* =Customiza Layout
 -------------------------------------------------------------- */
 #page {
@@ -609,6 +617,7 @@ transition: background-position 0.1s linear;
 color: #ffffff;
 background-color: #0044cc;
 }
+
 
 /* End of file style.css */
 /* Location: ./wp-content/themes/the-bootstrap/style.css */
