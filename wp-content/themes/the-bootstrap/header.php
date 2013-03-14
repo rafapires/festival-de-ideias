@@ -38,17 +38,21 @@
 						'fallback_cb'		=>	false,
 						'walker'			=>	new The_Bootstrap_Nav_Walker,
 					) ); ?>
-					<div class='container'>
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-							<img id='fdi_logo' src='<?php echo get_bloginfo('template_url'); ?>/img/logotipo-2013.png' />
-						</a>
-						<hgroup class='pull-right'>
+					<div class='row-fluid'>
+						<div class='span3'>
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-								<h2 id="site-description" class='pull-right'><?php bloginfo( 'description' ); ?></h2>
+								<img id='fdi_logo' src='<?php echo get_bloginfo('template_url'); ?>/img/logotipo-2013.png' />
 							</a>
-						</hgroup>
+						</div>
+						<div class='span9'>
+							<div class='pull-right'>
+								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+									<h2 id="site-description" class='pull-right'><?php bloginfo( 'description' ); ?></h2>
+								</a>
+							</div>
+						</div>
 					</div>
-					
+
 					<?php if ( get_header_image() ) : ?>
 					<a id="header-image" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 						<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" />

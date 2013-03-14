@@ -1078,6 +1078,10 @@ function _the_bootstrap_version() {
 	return $theme_version;
 }
 
+/* Remove filtro de auto parágrafo do Wordpress */
+remove_filter( 'the_content', 'wpautop' );
+remove_filter( 'the_excerpt', 'wpautop' );
+
 
 /* End of file functions.php */
 /* Location: ./wp-content/themes/the-bootstrap/functions.php */
