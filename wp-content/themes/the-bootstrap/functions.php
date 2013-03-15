@@ -1079,9 +1079,16 @@ function _the_bootstrap_version() {
 }
 
 /* Remove filtro de auto parágrafo do Wordpress */
-remove_filter( 'the_content', 'wpautop' );
-remove_filter( 'the_excerpt', 'wpautop' );
-
+add_filter('the_content', 'fdi_specific_no_wpautop', 9);
+function fdi_specific_no_wpautop($content) {
+    global $post;
+    if (is_page('Lista de Ideias')) { // or whatever other condition you like
+        remove_filter( 'the_content', 'wpautop' );
+        return $content;
+    } else {
+        return $content;
+    }
+}
 
 /* End of file functions.php */
 /* Location: ./wp-content/themes/the-bootstrap/functions.php */
