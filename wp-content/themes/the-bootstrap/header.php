@@ -44,10 +44,13 @@
 								<img id='fdi_logo' src='<?php echo get_bloginfo('template_url'); ?>/img/logotipo-2013.png' />
 							</a>
 						</div>
-						<div class='span9'>
+						<div class='span6 offset3'>
 							<div class='pull-right'>
 								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-									<h2 id="site-description" class='pull-right'><?php bloginfo( 'description' ); ?></h2>
+									<div id="site-description" class='pull-right'>
+										<p>Este é um site agregador das ideias que vão ser cocriadas antes e durante o grande encontro do Festival de Ideias 2013.</p>
+										<span id='fdi_data_evento_header'class='label label-info'>dias 12 e 13 de junho de 2013<br /> Cinemateca Brasileira, em São Paulo.</span>
+									</div>
 								</a>
 							</div>
 						</div>
@@ -77,16 +80,20 @@
 									<span class="brand"><?php bloginfo( 'name' ); ?></span>
 									<?php endif;?>
 									<div class="nav-collapse">
-										<?php wp_nav_menu( array(
-											'theme_location'	=>	'primary',
-											'menu_class'		=>	'nav',
-											'depth'				=>	3,
-											'fallback_cb'		=>	false,
-											'walker'			=>	new The_Bootstrap_Nav_Walker,
-										) ); 
-										if ( the_bootstrap_options()->navbar_searchform ) {
-											the_bootstrap_navbar_searchform();
-										} ?>
+										<div class='nav'>
+											<?php wp_nav_menu( array(
+												'theme_location'	=>	'primary',
+												'container'			=>	false,
+												'items_wrap'		=>	'%3$s',
+												'depth'				=>	3,
+												'fallback_cb'		=>	false,
+												'walker'			=>	new The_Bootstrap_Nav_Walker,
+											) );
+											if ( the_bootstrap_options()->navbar_searchform ) {
+												the_bootstrap_navbar_searchform();
+											} ?>
+											<li><a href="#myModal" data-toggle="modal">Contato</a></li>
+										</div>
 								    </div>
 								</div>
 							</div>

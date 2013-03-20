@@ -33,6 +33,18 @@
 			</div><!-- #page -->
 		</div><!-- .container -->
 	<!-- <?php printf( __( '%d queries. %s seconds.', 'the-bootstrap' ), get_num_queries(), timer_stop(0, 3) ); ?> -->
+	<!-- Modal -->
+	<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div id="fdi_contato_modal" class="modal-header row-fluid">
+			<div class='span12'>
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h3 id="myModalLabel" >Contato</h3>
+			</div>
+		</div>
+	<div class="fdi_modal-body">
+		<?php echo do_shortcode( '[formidable id=8]' ); ?>
+	</div>
+</div>	
 	<?php wp_footer(); ?>
 	</body>
 </html>
