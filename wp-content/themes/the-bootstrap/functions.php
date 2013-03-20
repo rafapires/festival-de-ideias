@@ -153,7 +153,7 @@ add_filter( 'body_class', 'the_bootstrap_layout_classes' );
 function the_bootstrap_custom_background_setup() {
 	
 	$args = apply_filters( 'the_bootstrap_custom_background_args',  array(
-		'default-color'	=>	'EFEFEF',
+		'default-color'	=>	'EBF4D4',
 	) );
 	
 	add_theme_support( 'custom-background', $args );
