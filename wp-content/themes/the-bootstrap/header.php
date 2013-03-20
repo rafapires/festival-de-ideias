@@ -77,16 +77,20 @@
 									<span class="brand"><?php bloginfo( 'name' ); ?></span>
 									<?php endif;?>
 									<div class="nav-collapse">
-										<?php wp_nav_menu( array(
-											'theme_location'	=>	'primary',
-											'menu_class'		=>	'nav',
-											'depth'				=>	3,
-											'fallback_cb'		=>	false,
-											'walker'			=>	new The_Bootstrap_Nav_Walker,
-										) ); 
-										if ( the_bootstrap_options()->navbar_searchform ) {
-											the_bootstrap_navbar_searchform();
-										} ?>
+										<div class='nav'>
+											<?php wp_nav_menu( array(
+												'theme_location'	=>	'primary',
+												'container'			=>	false,
+												'items_wrap'		=>	'%3$s',
+												'depth'				=>	3,
+												'fallback_cb'		=>	false,
+												'walker'			=>	new The_Bootstrap_Nav_Walker,
+											) );
+											if ( the_bootstrap_options()->navbar_searchform ) {
+												the_bootstrap_navbar_searchform();
+											} ?>
+											<li><a href="#myModal" data-toggle="modal">Contato</a></li>
+										</div>
 								    </div>
 								</div>
 							</div>
