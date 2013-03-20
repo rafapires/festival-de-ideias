@@ -525,22 +525,21 @@ a:hover {
 
 #fdi_resumo_thumb_ideia > div {
     background-color: #FFFFFF;
-    min-height: 106px;
+    border: 1px solid #3A87AD;
+    border-radius: 7px 7px 7px 7px;
+    min-height: 80px;
     padding: 3px;
 }
 
 #fdi_thumbnail_ideia {
-    margin: 14px 9px;
+    margin-left: -10px;
 }
 
-#fdi_title_thumb_ideia {
-    background-color: #C3C3D8;
-    padding: 0 7px;
-}
 
 #fdi_icon_tema_ideia {
     background: none repeat scroll 0 0 white;
     padding: 5px;
+    border: 1px solid #3A87AD;
 }
 
 #fdi_footer_thumb_ideia {
@@ -550,6 +549,12 @@ a:hover {
 
 #fdi_btn_url_ideia {
     margin-top: 26px;
+}
+
+#fdi_titulo_ideia_thumbnail > .label.label-info {
+    margin-bottom: 10px;
+    margin-left: -5px;
+    width: 100%;
 }
 
 #frm_search {
