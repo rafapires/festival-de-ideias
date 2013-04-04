@@ -49,7 +49,7 @@
 								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 									<div id="site-description" class='pull-right'>
 										<p>Este é um site agregador das ideias que vão ser cocriadas antes e durante o grande encontro do Festival de Ideias 2013.</p>
-										<span id='fdi_data_evento_header'class='label label-info'>dias 12 e 13 de junho de 2013<br /> Cinemateca Brasileira, em São Paulo.</span>
+										<span id='fdi_data_evento_header'class='label label-info'>12 e 13 de junho de 2013<br /> Cinemateca Brasileira, em São Paulo.</span>
 									</div>
 								</a>
 							</div>
