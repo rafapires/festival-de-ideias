@@ -109,12 +109,12 @@ function the_bootstrap_admin_header_style() {
 		font-size: 30px;
 	}
 	#headimg h1 a {
-		color: #0088CC !important;
+		color: #00CC54 !important;
 	    font-weight: bold;
 	    text-decoration: none;
 	}
 	#headimg h1 a:hover {
-		color: #005580 !important;
+		color: #516825 !important;
 	    text-decoration: underline;
 	}
 	#desc {
