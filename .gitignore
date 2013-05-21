@@ -40,3 +40,4 @@ wp-includes/*
 /*.xml
 /*.zip
 /*.sql
+/wp-content/themes/*.zip
