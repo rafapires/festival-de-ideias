@@ -39,3 +39,4 @@ wp-includes/*
 /sitemap.xml.gz
 /*.xml
 /*.zip
+/*.sql
